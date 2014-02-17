@@ -209,8 +209,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/appsetting.apk:system/app/appsetting.apk \
     vendor/cm/proprietary/xposed_installer.apk:system/app/xposed_installer.apk \
-    vendor/cm/proprietary/AosbOTA.apk:system/app/AosbOTA.apk
-
+    vendor/cm/proprietary/AosbOTA.apk:system/app/AosbOTA.apk \
+    vendor/liquid/prebuilt/NamuGothic_Bold.ttf:system/fonts/NamuGothic_Bold.ttf \
+    vendor/liquid/prebuilt/NanumGothic.ttf:system/fonts/NanumGothic.ttf
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
