@@ -1,3 +1,144 @@
+AOSB KitKat v1.3.7
+
+New Features/Improvements:
+Android Kitkat 4.4.4r2
+AOSB: New BootAnimation supported all devices!
+Frameworks: SlimROM Heads up
+Swipe left for notifications and recents 
+Swipe left an app in recents to open in floating mode
+Swipe down an app in AOSB recents to open in floating mode
+ActiveDisplay: Huge Fixes/improvements
+Sync AOSPA Floating window Changes with AOSB
+Implement App circle sidebar
+Floating widow: snap modes (up, down, left, right)
+HALO windows moveable and scaleable
+Over scroll effects
+code fixes HOVER And HALO
+Navbar: reimplement navbar cursor keys
+NavRing: Fix visibility issues on some devices
+User defined wifi/usb tether network.
+Torch: fix torch toggle delay on boot
+Make torch shutdown by camera usage work properly
+Download: add to support pause/resume download by manual
+Bring DownloadManager API inline with AOSPA
+Send a boost hint when a key on the navbar is pressed
+MultiWindow: Improvement and more [buggy]
+Fix lock screen notifications proximity sensors 
+Add APN for Tele2 4G, Claro (Panama), Tiscali Mobile (Italy), TIGO and VOX for Paraguay
+Themes: Fixes on Style, boot animation, and wallpaper , etc
+SystemUI: New Smart Pull-Down
+SystemUI: Smart Pull-Down - Any Notification
+SystemUI: Over scroll effects
+SystemUI: Weather
+SystemUI: show statusbar icon if quiet hours is active
+SystemUI: Fix crash of SystemUI (OutOfMemory)
+SystemUI: Fix SystemUI crash on Recent App
+SystemUI: Fix crash of SystemUI (AOSB Recent Landscape)
+SystemUI: Show notification when charging.
+SystemUI: Fix Airplane mode toggle issue using Quick Access menu.
+SystemUI: Update UserTile from Google 4.4 code
+SystemUI: fix double tap to sleep not working with secure lock screen
+SystemUI: Swipe to float mode for notifications and recents 
+SystemUI: Fix tile fliping
+HeadsUp: Fix dismiss on back key press.
+AOSB Bubble: Integrate with gesture SlideLayer
+AOSB OTA: Gapps auto update
+AOSB OTA: integration with Sourceforge download servers
+Settings: Search anywhere for anything !
+Settings: Driving Mode
+Settings: Heads up
+Settings: Show heads up at the bottom of the screen
+Settings: Implement App circle sidebar
+Settings: Vibration options customizer
+Settings: App Sidebar, Support for Configurable Trigger Region
+Settings: Protected apps
+Add native heads up support on dialer
+Remove Old non-intrusive dialog
+Remove Old Wakelock Blocker
+Mms: Fix thread view bugs also in black UI
+Mms: Fix FC issue that when tapping contact icon many times
+Mms: Add native heads up support
+DownloadProvider: add to support download into sdcard storage
+DownloadProvider: fix the crash when rotate screen.
+Add to support pause/resume download
+DownloadNotifier: Standardize play store and browser downloads
+DownloadNotifier: Normal notification for singles
+DownloadProvider: Add transfer speeds in notification
+Camera2: remove the pause button when timelapse is on
+Camera: Fix beauty mode & slow shutter indicator
+Camera2: Fix camera application memory leak
+Camera2: Add 50MP, 37.5MP resolution entry
+Camera: Fix JPEG quality DB update
+Blacklist call recording for US/EU mccs, remove sysprop flag for enabling
+Call recording service implementation, show recordings and allow playback in call history
+Dialer: Refactor SmartDial for additional languages
+Hardware: Add high touch sensitivity support
+
+Devices Blob:
+msm8960-common: kk gps blobs
+msm8960/express: ril blob dance
+HLTE: Update to GSM KK blobs
+klte: use prebuilt NFC HAL
+serrano: Remove prebuilt GPS blobs
+msm8960-common: update mpdecision/libqc-opt
+serrano: Massive KitKat blob updates
+klte: Import proprietary libs
+kltespr: Import proprietary libs
+klte: Initial import of klte
+jflte: gpe 4.4.4 adreno
+jflte: use gpe camera hal
+jflte: Clean up and remove extra libs
+hammerhead: Update proprietary libs
+KitKat Camera Blobs
+m7spr: update blobs from 5.03.651.3 RUU
+s4-common: update wcnss blobs from mint 9.2.A.0.295
+
+Samsung Kernel:
+Update WiFi drivers from 1.61.47 --> 1.61.58
+Boeffla sound 1.6.6
+prevent freeze on smart dock plug 
+updates ROW to V4.
+tweaks SIO a bit.
+add more governor
+add more schedulers
+enable conservative 
+update mali driver
+mali r3p1 for devices that need it
+audio: Remove hackaround for broken audio in first call
+
+Telephony And Dialer (Technical):
+Contact photo in call log can not change in time
+Dialer: revert old non-intrusive dialoger for incoming calls
+Dialer: Blacklist call recording for Australia.
+Add up navigation to call barring activity.
+Fix handling of unavailable network in call barring activity.
+Fix FC when phone type switched from GSM to CDMA.
+Delay setting of active subscription
+Fix crash during back to back emergency calls.
+Fix issue that phone would crash when PLMN search
+TeleService: Return to previous activity when click back icon in Dual SIM settings
+TeleService: Remove the option menu of the restore defaults
+Fix crash when call to voicemail with no number.
+TeleService: Do not save an empty quick respond message
+TeleService : Disable network mode select when it is GSM only
+TeleService: Remove "vibrate when ringing" from multi sim call settings
+TeleService : Add networkmode changed listener and CDMA APN item
+Fix the failure when doing unit test
+TeleService: Highlight the forbidden network operator
+TeleService: Remove the function of MO call on APM
+TeleService: Support call waiting on CDMA phone
+TeleService: Hide sim label when calling sub is absent
+Disable data in manual PLMN search on non-dsda mode.
+Add MSIM check to avoid phone app crash
+Phone: Disconnect current call if there is an active call on other sub
+MSIM: on permanent failure cause, don't redial
+Fix call barring always request from default sub
+Telephony: Add Multi SIM support for voicemail ringtone
+TeleService: Add FDN seting for CDMA network type
+MSIM(DSDA): if any sub is active dont disconnect BT
+fix cannot end videocall issues after NFC read contact and lauch another call
+Make incoming call screen style configurabl
+
 AOSB KitKat v1.3.6
 
 Android Kitkat 4.4.4r1 KTU84P
