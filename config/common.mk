@@ -240,15 +240,15 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/su/Superuser.apk:system/app/Superuser.apk \
     vendor/cm/prebuilt/common/su/.installed_su_daemon:system/etc/.installed_su_daemon
 
-############### Add PROBAM GAPPS
+############### Add AOSB GAPPS
 
 # copy gapps
 #PRODUCT_COPY_FILES += \
 #	$(call find-copy-subdir-files,*,vendor/cm/prebuilt/common/gapps,system)
 
-############### Add PROBAM GAPPS
+############### Add AOSB GAPPS
 
-# ProBAM Updater and Xposed
+# AOSB Updater and Xposed
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/appsetting.apk:system/app/appsetting.apk \
     vendor/cm/proprietary/xposed_installer.apk:system/app/xposed_installer.apk \
@@ -350,29 +350,29 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.modversion=$(CM_VERSION) \
   ro.cmlegal.url=http://www.cyanogenmod.org/docs/privacy
 
-# Add PROBAM version
-PROBAM_VERSION_MAJOR = 1.3.7
-PROBAM_VERSION_MINOR = stable
-PROBAM_GOO_VERSION = 137
-VERSION := $(PROBAM_VERSION_MAJOR)_$(PROBAM_VERSION_MINOR)
-PROBAM_VERSION := $(VERSION)_$(shell date +%Y%m%d-%H%M%S)
+# Add AOSB version
+AOSB_VERSION_MAJOR = 1.3.7
+AOSB_VERSION_MINOR = stable
+AOSB_GOO_VERSION = 137
+VERSION := $(AOSB_VERSION_MAJOR)_$(AOSB_VERSION_MINOR)
+AOSB_VERSION := $(VERSION)_$(shell date +%Y%m%d-%H%M%S)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.goo.developerid=probam \
-    ro.goo.rom=probam \
-    ro.goo.version=$(PROBAM_GOO_VERSION)
+    ro.goo.developerid=AOSB \
+    ro.goo.rom=AOSB \
+    ro.goo.version=$(AOSB_GOO_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.romstats.url=http://stats.codexc.com/ \
     ro.romstats.name=AOSB \
-    ro.romstats.version=$(PROBAM_VERSION_MAJOR) \
+    ro.romstats.version=$(AOSB_VERSION_MAJOR) \
     ro.romstats.tframe=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.probam.version=$(PROBAM_VERSION_MAJOR) \
-    ro.probam.gapps_url=http://probam.net/api/?device=gapps \
-    ro.probam.gapps_version=1.0.0 \
-    ro.probamrom.version=probam_$(PROBAM_VERSION)
+    ro.AOSB.version=$(AOSB_VERSION_MAJOR) \
+    ro.AOSB.gapps_url=http://AOSB.net/api/?device=gapps \
+    ro.AOSB.gapps_version=1.0.0 \
+    ro.AOSBrom.version=AOSB_$(AOSB_VERSION)
 
 -include vendor/cm-priv/keys/keys.mk
 
