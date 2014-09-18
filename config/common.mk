@@ -159,7 +159,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     Trebuchet \
-    DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
     CMWallpapers \
@@ -177,7 +176,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
+    
 
+# ViPER
+PRODUCT_COPY_FILES += \
+    vendor/common/prebuilt/apk/ViPER4Android_FX_A4.x.apk:system/app/ViPER4Android_FX_A4.x.apk
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     libsepol \
