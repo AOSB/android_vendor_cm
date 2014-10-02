@@ -1,5 +1,10 @@
 PRODUCT_BRAND ?= cyanogenmod
 
+# Include sabermod specific files for gcc customizations
+include vendor/cm/config/sm_mod.mk
+$(call inherit-product-if-exists, vendor/cm/products/$(TARGET_PRODUCT)_gcc.mk)
+include vendor/cm/config/sm_board.mk
+
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
@@ -373,9 +378,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.AOSB.gapps_url=http://AOSB.net/api/?device=gapps \
     ro.AOSB.gapps_version=1.0.0 \
     ro.AOSBrom.version=AOSB_$(AOSB_VERSION)
-
-# Check if custom gcc versions are used
--include vendor/cm/sm_board.mk
 
 -include vendor/cm-priv/keys/keys.mk
 
