@@ -374,6 +374,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.AOSB.gapps_version=1.0.0 \
     ro.AOSBrom.version=AOSB_$(AOSB_VERSION)
 
+# Check if custom gcc versions are used
+-include vendor/cm/sm_board.mk
+
 -include vendor/cm-priv/keys/keys.mk
 
 CM_DISPLAY_VERSION := $(CM_VERSION)
