@@ -2,7 +2,7 @@ PRODUCT_BRAND ?= cyanogenmod
 
 # Include sabermod specific files for gcc customizations
 include vendor/cm/config/sm_mod.mk
-$(call inherit-product-if-exists, vendor/cm/products/$(TARGET_PRODUCT)_gcc.mk)
+-include vendor/cm/products/$(TARGET_PRODUCT)_gcc.mk
 include vendor/cm/config/sm_board.mk
 
 SUPERUSER_EMBEDDED := true

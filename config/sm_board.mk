@@ -31,11 +31,11 @@ SM_AND_STATUS := $(filter (release) (prerelease) (experimental),$(SM_AND))
 ifneq ($(filter (SaberMod%),$(SM_AND)),)
 SM_AND_VERSION := $(SM_AND_NAME)-$(SM_AND_DATE)-$(SM_AND_STATUS)
 endif
+endif
 
 ifneq ($(SM_AND_VERSION),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sm.and=$(SM_AND_VERSION)
-endif
 endif
 endif
 
@@ -56,11 +56,10 @@ SM_ARM_STATUS := $(filter (release) (prerelease) (experimental),$(SM_ARM))
 ifneq ($(filter (SaberMod%),$(SM_ARM)),)
 SM_ARM_VERSION := $(SM_ARM_NAME)-$(SM_ARM_DATE)-$(SM_ARM_STATUS)
 endif
+endif
 
 ifneq ($(SM_ARM_VERSION),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sm.arm=$(SM_ARM_VERSION)
 endif
 endif
-endif
-
